@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.jkn_first.training.Goals_Initial_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/goals_button"
+        android:background="@drawable/goals_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/imageView2"
+                android:background="@drawable/goals_button_left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/goals_data_weight_container">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#fff5f5f5"
+                    android:id="@+id/weight_container"
+                    android:layout_above="@+id/weight_edit_text">
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/weight_delete_button"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@null" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weight_edit_text"
+                    android:text="91.5"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:textColor="#ff000000"
+                    android:layout_toLeftOf="@+id/weight_edit_button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CURRENT"
+                    android:id="@+id/textView"
+                    android:layout_alignParentStart="false"
+                    android:textSize="12dp"
+                    android:layout_toLeftOf="@+id/weight_edit_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/weight_edit_button"
+                    android:background="@null"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="204dp"
+                android:background="@drawable/goals_data_cholesterol_container">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/cholesterol_edit_button"
+                    android:background="@null"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You have reached your Cholesterol goal:"
+                    android:id="@+id/cholesterol_title_text"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/cholesterol_goal_view"
+                    android:layout_marginBottom="15dp" />
+
+                <LinearLayout
+                    android:layout_width="115dp"
+                    android:layout_height="82dp"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/goals_cholesterol_cup"
+                    android:id="@+id/cholesterol_goal_view"
+                    android:layout_above="@+id/cholesterol_edit_button"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.3"
+                        android:id="@+id/cholesterol_number_text"
+                        android:layout_gravity="center"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:background="#ffe8e8e8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mmol/L"
+                        android:id="@+id/textView2"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#ffe8e8e8"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/cholesterol_delete_button"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="212dp"
+                android:background="@drawable/goals_data_blood_container">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#fff5f5f5"
+                    android:id="@+id/blood_container"
+                    android:layout_alignParentStart="false"
+                    android:layout_above="@+id/blood_edit_text" />
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/blood_delete_button"
+                    android:background="@null"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CURRENT"
+                    android:id="@+id/textView4"
+                    android:layout_alignParentStart="false"
+                    android:textSize="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/blood_edit_text"
+                    android:layout_marginBottom="30dp" />
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blood_edit_text"
+                    android:text="130/90"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:enabled="false"
+                    android:inputType="phone"
+                    android:textColor="#ff000000"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/blood_edit_button"
+                    android:layout_marginBottom="15dp" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/blood_edit_button"
+                    android:background="@null"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

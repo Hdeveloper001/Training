@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.jkn_first.training.Test_Initial_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/test_button"
+        android:background="@drawable/test_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/imageView10"
+                android:background="@drawable/test_button_left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:background="@drawable/test_initial_cholesterol_container">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/test_cholesterol_button"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@null"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:background="@drawable/test_initial_blood_container" >
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/test_blood_button"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@null"
+                    android:longClickable="false"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="332dp"
+                android:background="@drawable/test_initial_diabetes_container">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/test_diabetes_button"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@null"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

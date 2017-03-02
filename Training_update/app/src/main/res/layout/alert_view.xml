@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="410dp"
+    tools:context="com.training.jkn_first.training.Alert_View"
+    android:id="@+id/survey_disp"
+    android:background="#ff787878"
+    android:layout_centerHorizontal="true">
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="37dp"
+        android:id="@+id/survey_button"
+        android:background="@drawable/survey_button_start"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="286dp"
+        android:layout_above="@+id/survey_button"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/disp"
+        android:background="@drawable/survey_text_0">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/survey_state_text"
+            android:visibility="invisible"
+            android:id="@+id/survey_button_group">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/survey_button_0"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/survey_button_1"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/survey_button_0"
+                android:background="@null" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/survey_button_2"
+                android:layout_gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:background="@drawable/survey_ling" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/survey_button_3"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/survey_button_4"
+                android:layout_marginRight="18dp"
+                android:background="@null" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/survey_button_4"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:background="@null" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/survey_button_5"
+        android:layout_alignParentEnd="false"
+        android:background="@drawable/survey_exit_button"
+        android:layout_above="@+id/disp"
+        android:layout_alignRight="@+id/disp"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.jkn_first.training.Exercise_Initial_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/exercise_button"
+        android:background="@drawable/exercise_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/exercise_button_left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="180dp"
+                    android:layout_height="79dp"
+                    android:id="@+id/exercise_initial_button"
+                    android:background="@drawable/exercise_initial_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="fill_horizontal"
+    android:background="#fff5f5f5">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/list_linear_layout"
+        android:layout_marginLeft="5dp"
+        android:background="#fff5f5f5"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="76"
+            android:textColor="#ff0da3e3"
+            android:textSize="40dp"
+            android:id="@+id/food_list_kcal_text"
+            android:background="#fff5f5f5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KJ"
+            android:id="@+id/textView18"
+            android:background="#fff5f5f5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/list_linear_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#fff5f5f5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banana, raw"
+            android:id="@+id/food_list_name_text"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#fff5f5f5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fruit, fresh"
+            android:id="@+id/food_list_kind_text"
+            android:textSize="20dp"
+            android:background="#fff5f5f5" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff5f5f5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fat:"
+                android:id="@+id/textView14"
+                android:textColor="#ff0da3e3"
+                android:textSize="15dp"
+                android:background="#fff5f5f5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0g"
+                android:id="@+id/food_list_fat_text"
+                android:textSize="15dp"
+                android:background="#fff5f5f5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carbs:"
+                android:id="@+id/textView16"
+                android:textColor="#ff0da3e3"
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:background="#fff5f5f5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17g"
+                android:id="@+id/food_list_carbs_text"
+                android:textSize="15dp"
+                android:background="#fff5f5f5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/food_list_add_button"
+        android:background="@drawable/food_list_add_button"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp" />
+
+</RelativeLayout>

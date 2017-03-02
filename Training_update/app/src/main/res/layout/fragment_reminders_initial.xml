@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.jkn_first.training.Reminders_Initial_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/reminders_button"
+        android:background="@drawable/reminders_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/imageView8"
+                android:background="@drawable/reminders_button_left" />
+
+            <ImageButton
+                android:layout_width="180dp"
+                android:layout_height="91dp"
+                android:id="@+id/reminders_initial_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="180dp"
+                android:background="@drawable/reminders_initial_container" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

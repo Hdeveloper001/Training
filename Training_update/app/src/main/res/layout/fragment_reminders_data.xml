@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.jkn_first.training.Reminders_Data_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/reminders_button"
+        android:background="@drawable/reminders_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/imageView9"
+                android:background="@drawable/reminders_button_left" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:baselineAligned="false"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/reminders_week_button"
+                        android:background="#ff777777"
+                        android:text="This week"
+                        android:textColor="#fff0f0f0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:background="#ff5c5c5c"
+                    android:layout_margin="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/reminders_month_button"
+                        android:background="#ffffffff"
+                        android:text="This month"
+                        android:textColor="#ff444444" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/reminders_year_button"
+                        android:background="#ffffffff"
+                        android:text="All"
+                        android:textColor="#ff444444" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:id="@+id/reminders_list"
+                android:layout_marginTop="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <ImageButton
+                    android:layout_width="180dp"
+                    android:layout_height="91dp"
+                    android:id="@+id/reminders_add_button"
+                    android:background="@drawable/reminders_initial_container"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentEnd="false" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

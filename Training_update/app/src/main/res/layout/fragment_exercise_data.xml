@@ -1,0 +1,339 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.jkn_first.training.Exercise_Data_Fragment"
+    android:background="#ffffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/exercise_button"
+        android:background="@drawable/exercise_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/imageView4"
+                android:background="@drawable/exercise_button_left" />
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/exercise_week_button"
+                        android:background="#ff5c5c5c"
+                        android:text="Week"
+                        android:textColor="#fff0f0f0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:background="#ff5c5c5c"
+                    android:layout_margin="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/exercise_month_button"
+                        android:background="#ffffffff"
+                        android:text="Month"
+                        android:textColor="#ff444444" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/exercise_year_button"
+                        android:background="#ffffffff"
+                        android:text="Year"
+                        android:textColor="#ff444444"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="#fff5f5f5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="#fff5f5f5"
+                    android:id="@+id/exercise_step_container"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TODAY, 11:30AM"
+                    android:id="@+id/exercise_step_date"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView5"
+                    android:layout_marginRight="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STEPS"
+                    android:id="@+id/textView5"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2014"
+                    android:id="@+id/exercise_step_text"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:textColor="#ff59a56b"
+                    android:layout_toLeftOf="@+id/textView5"
+                    android:layout_above="@+id/exercise_step_date"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STEPS"
+                    android:id="@+id/textView42"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#ff59a56b"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAILY AVERAGE:"
+                    android:id="@+id/textView43"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/textView42"
+                    android:layout_alignLeft="@+id/textView42" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3144"
+                    android:id="@+id/exercise_steps_average_text"
+                    android:textSize="10dp"
+                    android:layout_toRightOf="@+id/textView43"
+                    android:layout_alignBottom="@+id/textView43" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="#ffe8e8e8">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="#ffe8e8e8"
+                    android:id="@+id/exercise_distance_container"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TODAY, 11:30AM"
+                    android:id="@+id/textView10"
+                    android:layout_alignParentEnd="false"
+                    android:layout_below="@+id/textView11"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KM"
+                    android:id="@+id/textView11"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.71"
+                    android:id="@+id/textView12"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:textColor="#ff59a56b"
+                    android:layout_toLeftOf="@+id/textView11"
+                    android:layout_above="@+id/textView10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DISTANCE"
+                    android:id="@+id/textView44"
+                    android:textColor="#ff59a56b"
+                    android:textSize="23dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAILY AVERAGE:"
+                    android:id="@+id/textView45"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/textView44"
+                    android:layout_alignLeft="@+id/textView44" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.44"
+                    android:id="@+id/exercise_distance_average_text"
+                    android:textSize="10dp"
+                    android:layout_toRightOf="@+id/textView45"
+                    android:layout_alignBottom="@+id/textView45" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="#fff5f5f5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="#fff5f5f5"
+                    android:id="@+id/exercise_flights_container"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TODAY, 11:30AM"
+                    android:id="@+id/textView6"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView8"
+                    android:layout_marginRight="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FLOORS"
+                    android:id="@+id/textView8"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/textView9"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:textColor="#ff59a56b"
+                    android:layout_toLeftOf="@+id/textView8"
+                    android:layout_above="@+id/textView6"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FLIGHTS CLIMBED"
+                    android:id="@+id/textView47"
+                    android:textColor="#ff59a56b"
+                    android:textSize="23dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAILY AVERAGE:"
+                    android:id="@+id/textView48"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/textView47"
+                    android:layout_alignLeft="@+id/textView47" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/exercise_flight_average_text"
+                    android:textSize="10dp"
+                    android:layout_toRightOf="@+id/textView48"
+                    android:layout_alignBottom="@+id/textView48" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffffff">
+
+                <ImageButton
+                    android:layout_width="180dp"
+                    android:layout_height="62dp"
+                    android:id="@+id/exercise_sync_button"
+                    android:background="@drawable/exercise_sync_button"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

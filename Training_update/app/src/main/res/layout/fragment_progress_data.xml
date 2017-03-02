@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.jkn_first.training._Data_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/progress_button"
+        android:background="@drawable/progress_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/imageView7"
+                android:background="@drawable/progress_button_left" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:baselineAligned="false"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:baselineAligned="false"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/progress_week_button"
+                        android:background="#ff5c5c5c"
+                        android:text="Week"
+                        android:textColor="#fff0f0f0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:background="#ff5c5c5c"
+                    android:baselineAligned="false"
+                    android:layout_margin="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/progress_month_button"
+                        android:background="#ffffffff"
+                        android:text="Month"
+                        android:textColor="#ff777777" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:baselineAligned="false"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/progress_year_button"
+                        android:background="#ffffffff"
+                        android:text="Year"
+                        android:textColor="#ff777777"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="#fff0f0f0"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="#fff0f0f0"
+                    android:id="@+id/progress_weight_container"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEIGHT"
+                    android:id="@+id/textView54"
+                    android:textColor="#ff59a56b"
+                    android:textSize="23dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(kg)"
+                    android:id="@+id/textView55"
+                    android:layout_toRightOf="@+id/textView54"
+                    android:layout_alignBottom="@+id/textView54"
+                    android:layout_marginBottom="5dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="#ffdddddd">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="#ffdddddd"
+                    android:id="@+id/progress_cholesterol_container"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHOLESTEROL"
+                    android:id="@+id/textView56"
+                    android:textColor="#ff59a56b"
+                    android:textSize="23dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(mmol/L)"
+                    android:id="@+id/textView57"
+                    android:layout_toRightOf="@+id/textView56"
+                    android:layout_alignBottom="@+id/textView56"
+                    android:layout_marginBottom="5dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="#fff0f0f0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="#fff0f0f0"
+                    android:id="@+id/progress_blood_container"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BLOOD PRESSURE"
+                    android:id="@+id/textView58"
+                    android:textColor="#ff59a56b"
+                    android:textSize="23dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(SBP/DBP, mmHg)"
+                    android:id="@+id/textView59"
+                    android:layout_toRightOf="@+id/textView58"
+                    android:layout_alignBottom="@+id/textView58"
+                    android:layout_marginBottom="5dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

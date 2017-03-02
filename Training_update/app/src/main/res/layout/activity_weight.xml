@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Weight_Activity"
+    android:background="#ffebebf2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/setting_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:id="@+id/setting_unit_escape_button"
+            android:background="@drawable/setting_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/unit_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kilograms"
+                android:id="@+id/units_weight_kilo_text"
+                android:background="@null"
+                android:textColor="#ff000000"
+                android:textSize="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/unit_weight_kilo_button"
+                android:background="@null" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/unit_weight_kilo_check"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/unit_check" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/unit_button" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pounds"
+                android:id="@+id/unit_weight_pond_text"
+                android:background="@null"
+                android:textColor="#ff000000"
+                android:textSize="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/unit_weight_pond_button"
+                android:background="@null" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/unit_weight_pond_check"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@null" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

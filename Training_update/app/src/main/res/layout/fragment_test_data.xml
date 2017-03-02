@@ -1,0 +1,631 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.jkn_first.training.Test_Initial_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/test_button"
+        android:background="@drawable/test_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:id="@+id/imageView11"
+                android:background="@drawable/test_button_left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#fff0f0f0">
+
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="21dp"
+                    android:id="@+id/test_cholesterol_delete_button"
+                    android:background="@drawable/delete_button"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="25dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="false"
+                    android:background="#fff0f0f0"
+                    android:id="@+id/test_cholesterol_edit_container"
+                    android:gravity="center_vertical"
+                    android:layout_above="@+id/test_cholesterol_display_container"
+                    android:layout_marginBottom="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL CHOLESTEROL"
+                            android:id="@+id/textView15"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25 October 2015"
+                            android:id="@+id/test_cholesterol_age"
+                            android:textSize="15dp"
+                            android:layout_below="@+id/textView15"
+                            android:layout_marginTop="5dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp">
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/test_cholesterol_edit_button"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/test_edit_button"
+                            android:layout_centerVertical="true" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/test_cholesterol_text"
+                            android:text="91.5"
+                            android:textSize="30dp"
+                            android:textStyle="bold"
+                            android:textColor="#ff009ee2"
+                            android:layout_toRightOf="@+id/test_cholesterol_edit_button"
+                            android:layout_marginLeft="10dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/test_cholesterol_display_container"
+                    android:gravity="center_vertical"
+                    android:background="#fff0f0f0"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/test_cholesterol_previous_button"
+                        android:background="@drawable/test_previous_button"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2/10/2015"
+                        android:id="@+id/test_cholesterol_previous_text"
+                        android:layout_toRightOf="@+id/test_cholesterol_previous_button"
+                        android:textSize="15dp"
+                        android:paddingRight="10dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8/11/2015"
+                        android:id="@+id/text_cholesterol_next_text"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:layout_toLeftOf="@+id/test_cholesterol_next_button"
+                        android:layout_centerVertical="true" />
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/test_cholesterol_next_button"
+                        android:background="@drawable/test_next_button"
+                        android:layout_toLeftOf="@+id/test_cholesterol_add_button"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true" />
+
+                    <ImageButton
+                        android:layout_width="124dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/test_cholesterol_add_button"
+                        android:background="@drawable/test_add_button"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHOLESTEROL"
+                    android:id="@+id/textView66"
+                    android:textColor="#ff59a56b"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(mmol/L)"
+                    android:id="@+id/textView67"
+                    android:layout_toRightOf="@+id/textView66"
+                    android:layout_alignBottom="@+id/textView66"
+                    android:layout_marginBottom="5dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#ffdddddd">
+
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="21dp"
+                    android:id="@+id/test_blood_delete_button"
+                    android:background="@drawable/delete_button"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="25dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:background="#ffdddddd"
+                    android:id="@+id/relativeLayout2"
+                    android:gravity="center_vertical"
+                    android:layout_above="@+id/relativeLayout3"
+                    android:layout_marginBottom="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BLOOD PRESSURE"
+                            android:id="@+id/textView20"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 November 2015"
+                            android:id="@+id/test_blood_age"
+                            android:textSize="15dp"
+                            android:layout_below="@+id/textView20"
+                            android:layout_marginTop="5dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/linearLayout2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp">
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/test_blood_edit_button"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/test_edit_button"
+                            android:layout_centerVertical="true" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/test_blood_text"
+                            android:text="120/80"
+                            android:textSize="30dp"
+                            android:textStyle="bold"
+                            android:textColor="#ff009ee2"
+                            android:layout_toRightOf="@+id/test_blood_edit_button"
+                            android:layout_marginLeft="10dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/relativeLayout3"
+                    android:gravity="center_vertical"
+                    android:background="#ffdddddd"
+                    android:clickable="false"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/test_blood_previous_button"
+                        android:background="@drawable/test_previous_button"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerVertical="true" />
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/test_blood_next_button"
+                        android:background="@drawable/test_next_button"
+                        android:layout_toLeftOf="@+id/test_blood_add_button"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7/10/2015"
+                        android:id="@+id/test_blood_previous_text"
+                        android:layout_toRightOf="@+id/test_blood_previous_button"
+                        android:textSize="15dp"
+                        android:paddingRight="10dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/test_blood_next_text"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:layout_toLeftOf="@+id/test_blood_next_button"
+                        android:layout_centerVertical="true" />
+
+                    <ImageButton
+                        android:layout_width="124dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/test_blood_add_button"
+                        android:background="@drawable/test_add_button"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BLOOD PRESSURE"
+                    android:id="@+id/textView68"
+                    android:textColor="#ff59a56b"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(SBP/DBP, mmHg)"
+                    android:id="@+id/textView69"
+                    android:layout_toRightOf="@+id/textView68"
+                    android:layout_alignBottom="@+id/textView68"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:background="#fff0f0f0">
+
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="21dp"
+                    android:id="@+id/test_diabetes_delete_button"
+                    android:background="@drawable/delete_button"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="25dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff0f0f0"
+                    android:id="@+id/relativeLayout4"
+                    android:layout_alignParentStart="false"
+                    android:gravity="bottom"
+                    android:layout_above="@+id/relativeLayout5"
+                    android:layout_marginBottom="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BLOOD SUGAR"
+                            android:id="@+id/textView24"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 November 2015"
+                            android:id="@+id/test_diabetes1_age"
+                            android:textSize="15dp"
+                            android:layout_below="@+id/textView24"
+                            android:layout_marginTop="5dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout3"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp">
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/test_diabetes1_edit_button"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/test_edit_button"
+                            android:layout_centerVertical="true" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/test_diabetes1_text"
+                            android:text="7.0"
+                            android:textSize="30dp"
+                            android:textStyle="bold"
+                            android:textColor="#ff009ee2"
+                            android:layout_toRightOf="@+id/test_diabetes1_edit_button"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout5"
+                    android:gravity="center_vertical"
+                    android:background="#fff0f0f0"
+                    android:layout_alignParentStart="false"
+                    android:layout_above="@+id/relativeLayout6"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/test_diabetes1_previous_button"
+                        android:background="@drawable/test_previous_button"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerVertical="true" />
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/test_diabetes1_next_button"
+                        android:background="@drawable/test_next_button"
+                        android:layout_toLeftOf="@+id/test_diabetes1_add_button"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15/04/2015"
+                        android:id="@+id/test_diabetes1_previous_text"
+                        android:layout_toRightOf="@+id/test_diabetes1_previous_button"
+                        android:textSize="15dp"
+                        android:paddingRight="10dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/test_diabetes1_next_text"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:layout_toLeftOf="@+id/test_diabetes1_next_button"
+                        android:layout_centerVertical="true" />
+
+                    <ImageButton
+                        android:layout_width="124dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/test_diabetes1_add_button"
+                        android:background="@drawable/test_add_button"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff0f0f0"
+                    android:id="@+id/relativeLayout6"
+                    android:gravity="bottom"
+                    android:layout_above="@+id/relativeLayout7"
+                    android:layout_marginBottom="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HbA"
+                            android:id="@+id/textView28"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 November 2015"
+                            android:id="@+id/test_diabetes2_age"
+                            android:textSize="15dp"
+                            android:layout_below="@+id/textView28"
+                            android:layout_marginTop="5dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout4"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true">
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/test_diabetes2_edit_button"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/test_edit_button"
+                            android:layout_centerVertical="true" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/test_diabetes2_text"
+                            android:text="6.5"
+                            android:textSize="30dp"
+                            android:textStyle="bold"
+                            android:textColor="#ff009ee2"
+                            android:layout_toRightOf="@+id/test_diabetes2_edit_button"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/relativeLayout7"
+                    android:gravity="center_vertical"
+                    android:background="#fff0f0f0"
+                    android:clickable="false"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/test_diabetes2_previous_button"
+                        android:background="@drawable/test_previous_button"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerVertical="true" />
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/test_diabetes2_next_button"
+                        android:background="@drawable/test_next_button"
+                        android:layout_toLeftOf="@+id/test_diabetes2_add_button"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20/09/2015"
+                        android:id="@+id/test_diabetes2_previous_text"
+                        android:layout_toRightOf="@+id/test_diabetes2_previous_button"
+                        android:textSize="15dp"
+                        android:paddingRight="10dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/test_diabetes2_next_text"
+                        android:textSize="15dp"
+                        android:paddingLeft="10dp"
+                        android:layout_toLeftOf="@+id/test_diabetes2_next_button"
+                        android:layout_centerVertical="true" />
+
+                    <ImageButton
+                        android:layout_width="124dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/test_diabetes2_add_button"
+                        android:background="@drawable/test_add_button"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DIABETES"
+                    android:id="@+id/textView70"
+                    android:textColor="#ff59a56b"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(mmol/L)"
+                    android:id="@+id/textView71"
+                    android:layout_toRightOf="@+id/textView70"
+                    android:layout_alignBottom="@+id/textView70"
+                    android:layout_marginBottom="5dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

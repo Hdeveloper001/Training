@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.jkn_first.training.Setting_Data_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:id="@+id/setting_button"
+        android:background="@drawable/setting_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:id="@+id/imageView12"
+                android:background="@drawable/setting_button_left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:background="@drawable/setting_account_button">
+
+                <ImageView
+                    android:layout_width="63dp"
+                    android:layout_height="56dp"
+                    android:id="@+id/setting_photo_view"
+                    android:background="@drawable/setting_account_pic"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/setting_photo_view"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Joe Smith, 26"
+                        android:id="@+id/textView19"
+                        android:textColor="#ff59a56b"
+                        android:textSize="25dp"
+                        android:background="@null"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="To change your account details, visit the Patient Support Program websitedp"
+                        android:id="@+id/textView21"
+                        android:textSize="10dp"
+                        android:background="@null"
+                        android:textColor="#ff000000" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/setting_id_button"
+                    android:background="@null"
+                    android:layout_alignParentEnd="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/setting_unit_button">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/setting_unit_button"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/setting_help_button">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/setting_help_button"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/setting_terms_button">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/setting_term_button"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:background="@drawable/setting_privacy_button">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/setting_policy_button"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="340dp"
+                android:layout_height="42dp"
+                android:id="@+id/setting_logout_button"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setting_logout"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="false" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Training</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="survey_content_0">
+        Please take a few moments to complete this quick survey sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio montes, nascetur.
+    </string>
+    <string name="survey_content_1">
+        On a scale of 1-5, what would be your overall satisfaction with the patient program?\n
+        (1 = least satisfied, 5 = most satisfied)
+    </string>
+    <string name="survey_content_2">
+        Since participating in the patient program, do you feel that you understand your disease better?\n
+        (1 = no change, 3 = slightly better, 5 = full understanding)
+    </string>
+    <string name="survey_content_3">
+        Since participating in the patient program, do you feel that yur condition is better managed and your quality of life has improved?\n
+        (1 = no change, 3 = slightly improved, 5 = greatly improved)
+    </string>
+    <string name="survey_content_4">
+        Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio montes, nascetur.
+        You man now close this window.
+    </string>
+
+    <string name="survey_title_0">
+        CUSTOMER SURVEY
+    </string>
+    <string name="survey_title_1">
+        1/3
+    </string>
+    <string name="survey_title_2">
+        2/3
+    </string>
+    <string name="survey_title_3">
+        3/3
+    </string>
+    <string name="survey_title_4">
+        THANK YOU
+    </string>
+</resources>
